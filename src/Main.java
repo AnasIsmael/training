@@ -14,5 +14,22 @@ public class Main {
         // تشغيل ديكسترا
         graph.shortestPath("A");
 
+
+        Bellman graph1 = new Bellman();
+
+        graph1.addEdge("A", "B", 4);
+        graph1.addEdge("A", "C", 2);
+        graph1.addEdge("B", "C", 3);
+        graph1.addEdge("B", "D", 2);
+        graph1.addEdge("B", "E", 3);
+        graph1.addEdge("C", "B", 1);
+        graph1.addEdge("C", "D", 4);
+        graph1.addEdge("C", "E", 5);
+        graph1.addEdge("E", "D", -5);
+
+        System.out.println(graph);
+
+        graph1.shortesePath("A");
+
     }
 }
